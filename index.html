@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	 <title>Github Hub</title>
+ 	<link rel="stylesheet" type="text/css" href="site.css">
+
+ </head>	
+ <body>
+    <div class="container">
+    <header>
+    <nav>
+ 	   <ul>
+ 		<li><a href="/index.html">Home</a></li>
+ 		<li><a href="/contact.html">Contact</a></li>
+ 		<li><a href="/about.html">About</a></li>
+ 		</ul>
+ 	</nav>
+ 	<div><img src="file:///C:/Users/n67979/Documents/pluralsight%20html/logo.gif" class="bordered-image" /></div>
+ 	<div>This is a site to search Github for interesting projects.</p></div>
+ 	</header>
+ 	<section id="main">
+ 	<p>In this <em>sample site</em>, we'll show a list of <a href="http://github.com">Github</a> projects <span>and the data</span> about <strong>those projects</strong>.</p>
+ 	<form action="http://wilder.azurewebsites.net/echo" method="POST" class="bordered-image simple-form">
+ 	   <label for="searchPhrase">Search Phrase:</label>
+ 		<input type="text" name="searchPhrase" id="searchPhrase"/><br/>
+ 		<input type="checkbox" name="useStars" id="useStars" checked="true" /> 
+ 		<label for="useStars">Use Stars?</label><br/>
+ 		<label for="langChoice">Language</label>
+ 		<select name="langChoice" id="langChoice">
+ 		<option>All</option>
+          <option>JavaScript</option>
+          <option selected>C#</option>
+          <option>Java</option>
+          <option>Ruby</option>
+        </select>
+        <br/>
+ 		<input type="Submit" value="search" />
+ 	</form>
+ 	<div id="results" class="bordered-image">
+ 	   This is where results will live...eventually.
+ 	   </div>
+ 	</section>
+ 	<footer>
+ 		&copy; 2016 Lydell Gaines LLC
+ 	</footer>
+ 	</div>
+ 	<script type="text/javascript">
+ 	  var msg = "Hello Javascript";
+      console.log(msg);
+
+      var resultsDiv = document.getElementById("results");
+      resultsDiv.innerHTML = "<p>This is from Javascript</p>";
+ 	</script>
+ </body>
+</html>
